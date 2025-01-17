@@ -1,0 +1,8 @@
+#navbar , li{
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 0 10px;
+    text-align: center;
+    
+}
