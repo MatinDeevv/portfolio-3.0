@@ -1,8 +1,29 @@
-#navbar , li{
-    display: inline-block;
-    justify-content: space-between;
-    margin-left: 20px;
-    padding: 0 10px;
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar, ul{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
     
+    
+}
+#navbar, ul, li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    margin: 0;
+    padding: 0;
 }
