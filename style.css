@@ -7,18 +7,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 1%;
 }
 #navbar, ul{
     margin: 10px;
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 50px;
     border: 5px solid black;
     border-radius: 20px;
     margin:auto;
     margin-top: 10px;
-    width: 40%;
+    width: 20%;
+    font-size: 1rem;
 }
 #navbar, ul, li{
     display: flex;
