@@ -30,8 +30,24 @@ div{
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 768px){
+/* For small phones */
+@media only screen and (max-width: 480px) {
     #navbar, ul{
         width: 80%;
     }
-}
+  }
+  
+  /* For medium phones */
+  @media only screen and (max-width: 768px) {
+    #navbar, ul{
+        width: 80%;
+    }
+  }
+  
+  /* For large phones */
+  @media only screen and (max-width: 1024px) {
+    #navbar, ul{
+        width: 40%;
+    }
+  }
+  
