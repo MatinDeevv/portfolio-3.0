@@ -9,5 +9,6 @@ toggleButton.addEventListener('click', () => {
     if(document.body.classList.contains('dark-theme')){
         theme = 'dark';
     }
+    
     localStorage.setItem('theme', theme);
 });

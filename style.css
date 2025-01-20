@@ -3,15 +3,23 @@
     --text-color: #000000;
   }
   
-  .dark-theme {
+  .dark-theme, #navbar{
     --bg-color: #121212;
     --text-color: #ffffff;
-  }
+    #navbar, ul{
+        border: 2px solid white;
+        background-color: transparent;
+    }
+    #nabar, button{
+        color: white;
+        background-color: transparent;
+    }
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background-color: var(--bg-color);
@@ -40,6 +48,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+button{
+  
 }
 div{
     margin: 0;
