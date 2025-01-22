@@ -1,3 +1,8 @@
+/* NOTES
+    add translation 
+    add easter eggs and whene ever someone finds them give them point
+ */
+
 const toggleButton = document.getElementById('theme-toggle');
 const currentTheme = localStorage.getItem('theme');
 if(currentTheme === 'dark'){
@@ -12,3 +17,4 @@ toggleButton.addEventListener('click', () => {
     
     localStorage.setItem('theme', theme);
 });
+
