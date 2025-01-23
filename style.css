@@ -59,10 +59,10 @@ div{
     margin: 0;
     padding: 0;
 }
-#theme-toggle, button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#theme-toggle{
+    float: right;
+    margin:20px;
+    transform: translateY(-40px);
 }
   
   /* For medium phones */
