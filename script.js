@@ -18,3 +18,6 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
+if(theme === 'dark'){
+     toggleButton.style.color =rgb(255, 255, 255);
+}
