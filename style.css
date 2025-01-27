@@ -64,6 +64,7 @@ div{
     margin:20px;
     transform: translateY(-40px);
 }
+
   
   /* For medium phones */
   @media screen and (max-width: 768px) {
@@ -73,6 +74,3 @@ div{
         gap: 30px;
     }
   }
-  
-
-  
