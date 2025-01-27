@@ -8,9 +8,12 @@ const currentTheme = localStorage.getItem('theme');
 const IconMoon = document.getElementById('ICONmoon');
 const IconSun = document.getElementById('ICONsun');
 
-IconMoon.style.display = 'inline';
-IconSun.style.display = 'none';
-
+if(theme = 'dark'){
+    IconMoon.style.display = 'none';
+}
+else{
+    IconSun.style.display = 'none';
+}
 if(currentTheme === 'dark'){
     document.body.classList.add('dark-theme');
 }
