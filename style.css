@@ -73,4 +73,8 @@ div{
         height: 40px;
         gap: 30px;
     }
+    #pfp{
+        width: 150px;
+        margin-left: 30px  ;
+    }
   }
