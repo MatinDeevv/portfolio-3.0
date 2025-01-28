@@ -65,7 +65,19 @@ div{
     transform: translateY(-40px);
 }
 
-  
+#pfp:hover{
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+
+#darkmode-popup{
+    position: fixed; /* Sticks the popup to the viewport */
+    bottom: 20px;    /* Distance from the bottom */
+    right: 20px;   
+    border: 2px solid black;
+}
+
 
   
   /* For medium phones */
