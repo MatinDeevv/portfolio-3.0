@@ -7,6 +7,7 @@ const toggleButton = document.getElementById('theme-toggle');
 const currentTheme = localStorage.getItem('theme');
 const IconMoon = document.getElementById('ICONmoon');
 const IconSun = document.getElementById('ICONsun');
+let darkModePopUp = document.getElementById('darkmode-popup');
 
 if(theme = 'dark'){
     IconMoon.style.display = 'none';
@@ -30,7 +31,9 @@ toggleButton.addEventListener('click', () => {
         IconMoon.style.display = 'inline';
         IconSun.style.display = 'none';
     }
+    darkModePopUp.classList.add("show")
     // replace the class content of the sun and moon icons
     localStorage.setItem('theme', theme);
 });
+
 
