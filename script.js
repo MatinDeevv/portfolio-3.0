@@ -28,6 +28,7 @@ toggleButton.addEventListener('click', () => {
         IconMoon.style.display = 'none';
         IconSun.style.display = 'inline';
         ThemeModeSound.play();
+        navigator.vibrate(200); 
     }
     else{
         theme = 'light';
