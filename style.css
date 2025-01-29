@@ -75,16 +75,25 @@ div{
     position: fixed; 
     bottom: 20px;    
     right: 20px;   
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     opacity: 0;
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
     pointer-events: none;
 }
 
-#darkmode-popup.show {
+#darkmode-popup.show{
     opacity: 1;  
     pointer-events: auto;
     transform: translateY(0);
+}
+#darkmode-popup.light{
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;   
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    pointer-events: none;
 }
 
 

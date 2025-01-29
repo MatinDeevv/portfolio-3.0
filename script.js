@@ -2,12 +2,13 @@
     add translation 
     add easter eggs and whene ever someone finds them give them point
  */
-let theme;
+let theme = 'dark';
 const toggleButton = document.getElementById('theme-toggle');
 const currentTheme = localStorage.getItem('theme');
 const IconMoon = document.getElementById('ICONmoon');
 const IconSun = document.getElementById('ICONsun');
 let darkModePopUp = document.getElementById('darkmode-popup');
+
 
 if(theme = 'dark'){
     IconMoon.style.display = 'none';
@@ -38,7 +39,7 @@ toggleButton.addEventListener('click', () => {
         localStorage.setItem('theme', theme);
         setTimeout(() => {
             darkModePopUp.classList.remove("show")
-        }, 2000);
+        }, 3000);
     }
 });
 
