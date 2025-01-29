@@ -31,9 +31,15 @@ toggleButton.addEventListener('click', () => {
         IconMoon.style.display = 'inline';
         IconSun.style.display = 'none';
     }
-    darkModePopUp.classList.add("show")
-    // replace the class content of the sun and moon icons
-    localStorage.setItem('theme', theme);
+    
+    //dark mode pop up notif
+    if(theme == 'dark'){
+        darkModePopUp.classList.add("show")
+        localStorage.setItem('theme', theme);
+        setTimeout(() => {
+            darkModePopUp.classList.remove("show")
+        }, 2000);
+    }
 });
 
 
