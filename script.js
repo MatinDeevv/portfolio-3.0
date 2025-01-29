@@ -8,6 +8,7 @@ const currentTheme = localStorage.getItem('theme');
 const IconMoon = document.getElementById('ICONmoon');
 const IconSun = document.getElementById('ICONsun');
 let darkModePopUp = document.getElementById('darkmode-popup');
+const ThemeModeSound = new Audio('themSound.mp3');
 
 
 if(theme = 'dark'){
@@ -26,6 +27,7 @@ toggleButton.addEventListener('click', () => {
         theme = 'dark';
         IconMoon.style.display = 'none';
         IconSun.style.display = 'inline';
+        ThemeModeSound.play();
     }
     else{
         theme = 'light';
