@@ -1,6 +1,8 @@
 /* NOTES
     add translation 
     add easter eggs and whene ever someone finds them give them point
+    
+    use spotify API to get the latest song that you have listined to 
  */
 let theme = 'dark';
 const toggleButton = document.getElementById('theme-toggle');
@@ -9,7 +11,8 @@ const IconMoon = document.getElementById('ICONmoon');
 const IconSun = document.getElementById('ICONsun');
 let darkModePopUp = document.getElementById('darkmode-popup');
 const ThemeModeSound = new Audio('themSound.mp3');
-
+const textToType = "Welcome to my portfolio";
+let index = 0;
 
 if(theme = 'dark'){
     IconMoon.style.display = 'none';
@@ -47,3 +50,13 @@ toggleButton.addEventListener('click', () => {
 });
 
 
+
+
+function typeWriter() {
+    if (index < textToType.length) {
+        document.getElementById("type").innerHTML += textToType.charAt(index);
+        index++;
+        
+        setTimeout(typeWriter, 100);
+    }
+}
