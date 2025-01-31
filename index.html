@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b0a6a0e7cc.js" crossorigin="anonymous"></script>
     <title>Dan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,12 +18,12 @@
             </ul>
             <button id="theme-toggle">
                 <i id="ICONmoon" class="fa-solid fa-cloud-moon fa-2xl"></i>
-                <i id="ICONsun" class="fa-solid fa-cloud-sun fa-2xl"></i>
+                <i id="ICONsun"  class="fa-solid fa-cloud-sun fa-2xl"></i>
             </button>
         </div>
 
         <secction id="home">
-                <img src="pfp.png" id="pfp" draggable="false">    
+                <img src="pfp.png" id="pfp" draggable="false"  data-aos="fade-right">    
                 <div id="type"></div>
         </secction>
 
@@ -50,9 +51,11 @@
           <h4> Are you Bat Man or a programmer?</h4>
         </span>
 
-        lol no commit today
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/portfolio.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
