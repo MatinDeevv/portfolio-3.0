@@ -60,5 +60,3 @@ function typeWriter() {
         setTimeout(typeWriter, 100);
     }
 }
-
-// i'm lazy to commit today :/

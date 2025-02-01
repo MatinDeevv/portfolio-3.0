@@ -94,6 +94,17 @@ div{
     pointer-events: none;
 }
 
+#popUp{
+    display: none;
+}
+#popUp.show{
+ display: inline;
+ transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+ text-align: center;
+ align-items: center;
+ margin: 0;
+ padding: 0;
+}
 
   
   /* For medium phones */
