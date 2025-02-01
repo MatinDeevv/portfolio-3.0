@@ -52,6 +52,9 @@ toggleButton.addEventListener('click', () => {
 
 
 
+
+
+
 function typeWriter() {
     if (index < textToType.length) {
         document.getElementById("type").innerHTML += textToType.charAt(index);
