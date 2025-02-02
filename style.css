@@ -98,12 +98,11 @@ div{
     display: none;
 }
 #popUp.show{
- display: inline;
+ display: flex;
  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
- text-align: center;
- align-items: center;
- margin: 0;
- padding: 0;
+ border-radius: 40px;
+ transform: translateX(100px);
+ transform: translateY(100px);
 }
 
   

@@ -63,3 +63,18 @@ function typeWriter() {
         setTimeout(typeWriter, 100);
     }
 }
+
+
+setTimeout(() => {
+    let warning = document.createElement("div");
+    warning.id = "popUp";
+    warning.textContent = "!!This Website has sound effects!!";
+    warning.classList.add("show");
+
+    document.body.appendChild(warning);
+
+    setTimeout(() => {
+        warning.classList.remove("show");
+    }, 3000);
+
+}, 1000);
