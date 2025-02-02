@@ -97,7 +97,7 @@ div{
 #popUp{
     display: none;
 }
-#popUp.show{
+#popUp.show2{
  display: flex;
  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
  border-radius: 40px;
