@@ -94,6 +94,21 @@ div{
     pointer-events: none;
 }
 
+
+
+section{
+    height: 100%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 #popUp{
     display: none;
     font-size: 30px;
