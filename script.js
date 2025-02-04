@@ -50,13 +50,22 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-function typeWriter() {
-    if (index < textToType.length) {
-        document.getElementById("type").textContent += textToType.charAt(index);
-        index++;
-        
-        setTimeout(typeWriter, 100);
+function typeWrite(element) {
+    let text = element.innerHTML;
+    element.innerHTML = "";
+    let i = 0;
+
+    function typing() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 100); // typing speed 
+      }
     }
-}
+    typing();
+  }
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".type-text").forEach(typeWrite);
+  });
 
 alert("!!This website has sound effects!!");
