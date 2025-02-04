@@ -3,65 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan | Portfolio</title>
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b0a6a0e7cc.js" crossorigin="anonymous"></script>
-    <title>Dan</title>
+    
+    <!-- AOS (Animate on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .navbar-container ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar-container li {
+            margin: 0 15px;
+        }
+
+        .navbar-container button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .navbar-container button:hover {
+            color: #00e6ff;
+        }
+
+        /* Theme Toggle */
+        #theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00e6ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .hero .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .hero .cta-buttons button {
+            background: #00e6ff;
+            color: #111;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero .cta-buttons button:hover {
+            background: #ff00ff;
+            color: white;
+        }
+
+        /* Dark Mode Popup */
+        #darkmode-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <!--<div id="popUp">Warning: this website has sound effects</div>-->
-    <div class="navbar-container">
-        <div id="navBar"  data-aos="fade-down">
-            <ul>
-                <li><button>Home</button></li>
-                <li><button>Work</button></li>
-                <li><button>About</button></li>
-            </ul>
-            <button id="theme-toggle">
-                <i id="ICONmoon" class="fa-solid fa-cloud-moon fa-2xl"></i>
-                <i id="ICONsun"  class="fa-solid fa-cloud-sun fa-2xl"></i>
-            </button>
+
+    <!-- Navbar -->
+    <div class="navbar-container" data-aos="fade-down">
+        <ul>
+            <li><button>Home</button></li>
+            <li><button>Work</button></li>
+            <li><button>About</button></li>
+        </ul>
+        <button id="theme-toggle">
+            <i id="ICONmoon" class="fa-solid fa-cloud-moon fa-2xl"></i>
+            <i id="ICONsun" class="fa-solid fa-cloud-sun fa-2xl" style="display:none;"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="pfp.png" alt="Dan's Profile" draggable="false" data-aos="fade-right">
+        <h1 data-aos="fade-left">I'm Dan.</h1>
+        <p data-aos="fade-up">A passionate developer building cool projects.</p>
+        <div class="cta-buttons">
+            <button>Explore Work</button>
+            <button>About Me</button>
         </div>
+    </section>
 
-        <secction id="home">
-                <img src="pfp.png" id="pfp" draggable="false"  data-aos="fade-right">    
-                <h1 data-aos="fade-left" class="type-text">I'm Dan</h1>
-                
-                <!--<i class="fa-solid fa-location-dot fa-xl"></i>-->
-        </secction>
-       
+    <!-- Dark Mode Achievement -->
+    <span id="darkmode-popup">
+        <h3>Achievement: Dark Mode</h3>
+        <h4>Are you Batman or a programmer?</h4>
+    </span>
 
-        
-
-
-
-        <secction id="Work"></secction>
-
-
-
-
-
-
-
-        <secction id="About"></secction>
-
-
-
-        <section id="experience">
-            
-        </section>
-
-        <!-- this section is for the things that are not important-->
-        <span id="darkmode-popup">
-            <h3>Achivment: Dark Mode</h3>
-          <h4> Are you Bat Man or a programmer?</h4>
-        </span>
-
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/portfolio.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     <script>
         AOS.init();
-      </script>
+
+        // Theme Toggle
+        const themeToggle = document.getElementById("theme-toggle");
+        const iconMoon = document.getElementById("ICONmoon");
+        const iconSun = document.getElementById("ICONsun");
+        const darkModePopup = document.getElementById("darkmode-popup");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                iconMoon.style.display = "none";
+                iconSun.style.display = "inline";
+                darkModePopup.style.display = "block";
+                setTimeout(() => {
+                    darkModePopup.style.display = "none";
+                }, 2000);
+            } else {
+                iconMoon.style.display = "inline";
+                iconSun.style.display = "none";
+            }
+        });
+    </script>
+
 </body>
 </html>
