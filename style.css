@@ -103,7 +103,6 @@ section, #home, #Work, #About, #experience{
     align-items: center;
 }
 
-
   
   /* For medium phones */
   @media screen and (max-width: 768px) {
