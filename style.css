@@ -104,22 +104,6 @@ section, #home, #Work, #About, #experience{
 }
 
 
-
-
-
-
-#popUp{
-    display: none;
-    font-size: 30px;
-}
-#popUp.show2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.4s ease-in-out;
-    transform: translateY(40px);
-}
-
   
   /* For medium phones */
   @media screen and (max-width: 768px) {

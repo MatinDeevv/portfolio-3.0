@@ -52,24 +52,11 @@ toggleButton.addEventListener('click', () => {
 
 function typeWriter() {
     if (index < textToType.length) {
-        document.getElementById("type").innerHTML += textToType.charAt(index);
+        document.getElementById("type").textContent += textToType.charAt(index);
         index++;
         
         setTimeout(typeWriter, 100);
     }
 }
 
-
-setTimeout(() => {
-    let warning = document.createElement("div");
-    warning.id = "popUp";
-    warning.textContent = "!!This Website has sound effects!!";
-    warning.classList.add("show2");
-
-    document.body.appendChild(warning);
-
-    setTimeout(() => {
-        warning.classList.remove("show2");
-    }, 3000);
-
-}, 500);
+alert("!!This website has sound effects!!");
